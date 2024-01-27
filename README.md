@@ -1,14 +1,14 @@
 # pygame-project
-👾 Welcome to Save The Alien!
+## 👾 Welcome to Save The Alien!
 
 ## Help the cute alien navigate through space, avoiding falling fireballs and reaching its home planet. How long can you keep the alien alive?
 
-##🚀 Features:
+## 🚀 Features:
 
 Simple controls: Use arrow keys to move.
 Dodge fireballs: Test your reflexes!
 High scores: Compete and see if you can make it to the top 10.
-##🌟 How to Play:
+## 🌟 How to Play:
 
 Clone the repository.
 
@@ -22,7 +22,7 @@ Copy code
 python save_the_alien.py
 Survive, dodge, and enter your name to save your score!
 
-##🏆 Top Scorers:
+## 🏆 Top Scorers:
 
 Check the high_scores.json file for the leaderboard.
 ##👨‍💻 Contributor:
