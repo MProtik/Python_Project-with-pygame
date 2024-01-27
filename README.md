@@ -14,19 +14,23 @@ Clone the repository.
 
 bash
 Copy code
-git clone https://github.com/MProtik/Save-The-Alien.git
-cd Save-The-Alien
-Run the game.
+--> git clone https://github.com/MProtik/Save-The-Alien.git
+--> cd Save-The-Alien
+--> Run the game.
 
 Copy code
-python save_the_alien.py
+--> python save_the_alien.py
 Survive, dodge, and enter your name to save your score!
 
 ## 🏆 Top Scorers:
 
 Check the high_scores.json file for the leaderboard.
-##👨‍💻 Contributor:
+## 👨‍💻 Contributor:
 
 # Developed by Mokabbir protik
+## License
+This project is licensed under the MIT License.
+
+Feel free to contribute, report issues, or provide feedback!
 
 Ready for an intergalactic adventure? Let's save the alien! 👽🌌
