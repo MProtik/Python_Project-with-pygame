@@ -48,6 +48,7 @@ else:
     high_scores = []
 
 
+#for rotating all the fireball png file
 def animation():
     l = []
     for i in range(1, 20):
@@ -61,7 +62,7 @@ def animation():
 # Sequence of images to make animation
 fireball = animation()
 
-
+# for drawing things in the windows
 def draw(elapse_time, stars, bg_y):
     WIN.blit(BG, (0, bg_y))
     WIN.blit(BG, (0, bg_y - HEIGHT))
@@ -76,6 +77,7 @@ def draw(elapse_time, stars, bg_y):
     pygame.display.update()
 
 
+# introduction screen. to start the game
 def intro_screen():
     intro_font = pygame.font.SysFont("comicsans", 50)
     intro_font = pygame.font.SysFont("comicsans", 50)
@@ -92,6 +94,7 @@ def intro_screen():
     wait_for_key()
 
 
+# the key funtion, that will be used inside the intro function
 def wait_for_key():
     waiting = True
     while waiting:
@@ -104,6 +107,7 @@ def wait_for_key():
                 break
 
 
+# for taking the player name
 def input_name():
     input_font = pygame.font.SysFont("comicsans", 50)
     input_text = input_font.render("Enter your name:", 1, 'white')
@@ -136,7 +140,7 @@ def input_name():
 
     return name
 
-
+# This will display the score
 def display_scores():
     high_scores.sort(key=lambda x: x['score'], reverse=True)
     top_scores = high_scores[:10]
@@ -166,6 +170,7 @@ def save_scores(name, score):
         json.dump(high_scores[:10], f)
 
 
+# confermation screen. That the player wants to play or not
 def confirm_screen():
     confirm_font = pygame.font.SysFont("comicsans", 40)
     confirm_text = confirm_font.render("Do you want to play again? (Y/N)", 1, 'white')
