@@ -40,9 +40,9 @@ FONT = pygame.font.SysFont("comicsans", 30)
 NAME_FONT = pygame.font.SysFont("comicsans", 40)
 
 # scores from a JSON file
-HIGH_SCORES_FILE = 'high_scores.json'
-if os.path.exists(HIGH_SCORES_FILE):
-    with open(HIGH_SCORES_FILE, 'r') as f:
+FILE = 'high_scores.json'
+if os.path.exists(FILE):
+    with open(FILE, 'r') as f:
         high_scores = json.load(f)
 else:
     high_scores = []
@@ -162,7 +162,7 @@ def save_scores(name, score):
     high_scores.sort(key=lambda x: x['score'], reverse=True) # I will change the function
 
     # Save top 10 scores to the JSON file
-    with open(HIGH_SCORES_FILE, 'w') as f:
+    with open(FILE, 'w') as f:
         json.dump(high_scores[:10], f)
 
 
